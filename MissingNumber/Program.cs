@@ -45,7 +45,7 @@ public interface IMissingElement
 }
 
 
-// 2 - Single Responsibility Principle
+// 2 - Single Responsibility Principle - FInding missing elemenet is the only responsbility for MissingElement class
 public class MissingElement : IMissingElement
 {
     public int FindMissingElement(int[] nums)
@@ -59,6 +59,7 @@ public class MissingElement : IMissingElement
 }
 
 
+// Dependency Inversion
 public class MissingNumberApp
 {
     private readonly IMissingElement _missingElement;
